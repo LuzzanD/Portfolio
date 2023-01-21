@@ -14,14 +14,14 @@ const renderProjects = projectsData.map(project => {
           </div>
           <div className="w-full flex absolute sm:hidden bottom-0 group-hover:flex">
             <Link href={project?.github}>
-              <div className={`${project.site ? 'w-1/2' : 'w-full rounded-br-lg'} text-zinc-100 dark:text-zinc-800 rounded-bl-lg text-base sm:text-sm lg:text-base text-center font-semibold py-2 lg:py-4 bg-zinc-800 dark:bg-zinc-100
+              <div className={`${project.site ? 'w-1/2' : 'w-full rounded-br-lg'} text-zinc-100 dark:text-zinc-800 rounded-bl-lg text-sm lg:text-base text-center font-semibold py-2 lg:py-4 bg-zinc-800 dark:bg-zinc-100
                   bg-opacity-80 hover:bg-opacity-100 dark:bg-opacity-80 dark:hover:bg-opacity-100 hover:cursor-pointer`}
               >
                 Code
               </div>
             </Link>
             <Link href={project?.site}>
-              <div className={`${project.site ? 'w-1/2' : 'hidden'} text-zinc-100 dark:text-zinc-800 rounded-br-lg text-base sm:text-sm lg:text-base text-center font-semibold py-2 lg:py-4 bg-zinc-800 dark:bg-zinc-100
+              <div className={`${project.site ? 'w-1/2' : 'hidden'} text-zinc-100 dark:text-zinc-800 rounded-br-lg text-sm lg:text-base text-center font-semibold py-2 lg:py-4 bg-zinc-800 dark:bg-zinc-100
                     bg-opacity-80 hover:bg-opacity-100 dark:bg-opacity-80 dark:hover:bg-opacity-100 hover:cursor-pointer border-l-zinc-900 border-l-[2px]`}
               >
                 Website
@@ -31,8 +31,8 @@ const renderProjects = projectsData.map(project => {
         </>:
         <h1 className="mt-32 lg:mt-40 text-xl lg:text-3xl text-zinc-900 dark:text-zinc-100 text-center">Comming soon...</h1>}
       </div>
-      <div className="py-5 lg:py-6 w-[100%] m-auto flex justify-around items-center rounded-md">
-        {project.techs?.map((icon,i) => <div key={i} className="w-[30px] h-[30px] sm:w-[25px] sm:h-[25px] lg:w-[35px] lg:h-[35px]">{icon}</div>)}
+      <div className="py-4 lg:py-6 w-[100%] m-auto flex justify-around items-center rounded-md">
+        {project.techs?.map((icon,i) => <div key={i} className="w-[25px] h-[25px] lg:w-[35px] lg:h-[35px]">{icon}</div>)}
       </div>
     </div>
   )
@@ -43,7 +43,7 @@ const Projects = () => {
     <div id="projects" className="-mb-16 md:-mb-8 xl:mb-0 pt-8 xl:pt-16">
       <div>
         <h2 className="mb-10 xl:mb-20 mt-20 text-3xl md:text-4xl xl:text-5xl tracking-widest dark:text-white">Projects</h2>
-        <p className="text-sm md:text-base xl:text-lg w-3/4 lg:w-2/3 py-2 leading-6 md:leading-7 lg:leading-8 xl:leading-8 tracking-wider text-zinc-800 dark:text-zinc-100">
+        <p className="text-sm md:text-base xl:text-lg w-[90%] sm:w-3/4 lg:w-2/3 py-2 leading-6 md:leading-7 lg:leading-8 xl:leading-8 tracking-wider text-zinc-800 dark:text-zinc-100">
           Ever since I started learning programming, I've been trying to combine learning theories and doing
           practical work. In this section, you will find a selection of projects that I have worked on. 
           Each project features a list of technologies used, a link to the project's website, and a link to the project's Github code.

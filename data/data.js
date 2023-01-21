@@ -7,12 +7,12 @@ import { HtmlIcon, CssIcon, JavaScriptIcon, TypeScriptIcon, ReactIcon, TailwindI
 
 
 export const projectsData = [
-    {name: 'Spotify Clone', image:'', techs:[<TailwindIcon />, <ReactIcon />, <RapidApiIcon />, < ReduxIcon/>], site: '/', github:''},
-    {name: 'Portfolio', image: port, techs:[<TailwindIcon />, <ReactIcon />, <NextIcon />], site: '', github:''},
     {name: 'E-commerce', image: ecom, techs:[ <CssIcon />, <SanityIcon />, <ReactIcon />, <NextIcon />], site: 'https://ecommerce-project-tawny.vercel.app', github:'https://github.com/LuzzanD/ecommerce-project'},
+    {name: 'Portfolio', image: port, techs:[<TailwindIcon />, <ReactIcon />, <NextIcon />], site: '', github:''},
     {name: 'Quiz', image: ical, techs:[<HtmlIcon />, <CssIcon />, <ReactIcon />], site: 'https://andrijasquizical.netlify.app', github:'https://github.com/LuzzanD/Quiz'},
     {name: 'Colour Scheme', image: semac, techs:[<HtmlIcon />, <CssIcon />, <JavaScriptIcon />], site: 'https://andrijascolorscheme.netlify.app', github:'https://github.com/LuzzanD/Color-scheme-generator'},
-    {name: 'Shopping Cart', image: restaurant, techs:[<HtmlIcon />, <CssIcon />, <JavaScriptIcon />], site: 'https://restaurantordering.netlify.app', github:'https://github.com/LuzzanD/Restaurant-Ordering'}
+    {name: 'Shopping Cart', image: restaurant, techs:[<HtmlIcon />, <CssIcon />, <JavaScriptIcon />], site: 'https://restaurantordering.netlify.app', github:'https://github.com/LuzzanD/Restaurant-Ordering'},
+    {name: 'Spotify Clone', image:'', techs:[<TailwindIcon />, <ReactIcon />, <RapidApiIcon />, < ReduxIcon/>], site: '/', github:''}
 ]
 
 export const technologiesData = [
@@ -27,7 +27,7 @@ export const technologiesData = [
 
 export const contactData = [
     {link: 'www.github.com/LuzzanD', href:'https://www.github.com/LuzzanD', icon: <AiFillGithubIcon/>},
-    {link: 'andrija0stojanovic@gmail.com', href:'https://www.github.com/LuzzanD', icon: <HiMailIcon/>},
-    {link: 'www.linkedin.com/in/andrija-stojanović-1512411a6', href:'https://www.github.com/LuzzanD', icon: <AiFillLinkedinIcon/>},
-    {link: '+381645696513', href:'https://www.github.com/LuzzanD', icon: <AiFillPhoneIcon/>},
+    {link: 'andrija0stojanovic@gmail.com', href:'mailto:andrija0stojanovic@gmail.com', icon: <HiMailIcon/>},
+    {link: 'www.linkedin.com/in/andrija-stojanović-1512411a6', href:'https://www.linkedin.com/in/andrija-stojanović-1512411a6', icon: <AiFillLinkedinIcon/>},
+    {link: '+381645696513', href:'tel:+381645696513', icon: <AiFillPhoneIcon/>},
 ]
