@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-   <div id="about" className="-mb-20 md:-mb-8 xl:mb-0 pt-2">
+   <div id="about" className="-mb-20 md:-mb-8 xl:-mb-10 pt-2">
      <h2 className="mb-12 sm:mb-16 mt-10 xl:mt-16 text-3xl md:text-4xl xl:text-5xl tracking-widest dark:text-zinc-100">About</h2>
      <div className="flex flex-col lg:flex-row-reverse relative justify-end lg:justify-between gap-12">
         <div className="rounded-full h-52 w-52 sm:h-64 sm:w-64 xl:w-80 xl:h-80 relative right-0 lg:top-8 overflow-hidden border-[5px]">

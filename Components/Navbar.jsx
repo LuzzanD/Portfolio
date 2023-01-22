@@ -2,47 +2,44 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsSunFill } from "react-icons/bs";
+import { navbarData } from '../data/data'
 
 const Navbar = ({darkMode, handleClick}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-200 flex justify-between items-center realtive py-4 px-12 dark:bg-zinc-800 md:px-20 lg:px-24 xl:px-40"> 
+    <nav className="bg-zinc-200 flex justify-between items-center realtive py-4 dark:bg-zinc-800 px-8 sm:px-12 md:px-20 lg:px-24 xl:px-40"> 
       <div className={`z-50 -mt-1 font-bold ${mobileMenuOpen ? 'rotate-360 duration-500' : '-rotate-360 duration-500'} bg-clip-text text-transparent bg-gradient-to-r from-zinc-700 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 text-3xl lg:text-4xl`}>
         <Link href="/">a</Link>
       </div>
       <div>
         <ul className="hidden sm:flex text-sm lg:text-base drop-shadow-grad font-semibold justify-around sm:gap-6 md:gap-8 lg:gap-16">
-          <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-            <Link href="/">About</Link>
-          </li>
-          <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-            <Link href="#technologies">Technologies</Link>
-          </li>
-          <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-            <Link href="#projects">Projects</Link>
-          </li>
-          <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-            <Link href="#contact">Contact</Link>
-          </li>
+          {navbarData.map(item => {
+            return (
+              <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
+                <Link href={item.href}>{item.section}</Link>
+              </li>
+            )
+           })}
         </ul>
       </div>
       <div className="block sm:hidden">
         <div className={`absolute ${mobileMenuOpen ? 'top-0 duration-500' : '-top-[500px] duration-500'} right-0 p-6 w-full bg-zinc-200 dark:bg-zinc-800`}>
           <ul className="flex flex-col text-sm font-bold drop-shadow-grad items-center justify-around gap-6 ">
-            <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-              <Link href="/">About</Link>
-            </li>
-            <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-              <Link href="#technologies">Technologies</Link>
-            </li>
-            <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-              <Link href="#projects">Projects</Link>
-            </li>
-            <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
-              <Link href="#contact">Contact</Link>
-            </li>
-            <li onClick={handleClick} className={`${darkMode ? 'text-zinc-200' : 'text-zinc-800'} mt-4 tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200`}>
+            {navbarData.map(item => {
+              return (
+                <li onClick={() => setMobileMenuOpen(false)} className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
+                  <Link href={item.href}>{item.section}</Link>
+                </li>
+              )
+            })}
+            <li 
+              onClick={() => {
+                handleClick()
+                setMobileMenuOpen(false)
+              }} 
+              className={`${darkMode ? 'text-zinc-200' : 'text-zinc-800'} mt-4 tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200`}
+            >
               {darkMode ? 'Light theme' : 'Dark theme'}
             </li>
           </ul>

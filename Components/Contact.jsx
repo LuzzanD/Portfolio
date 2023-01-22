@@ -1,22 +1,19 @@
-import Link from 'next/link'
 import { contactData } from '../data/data'
 
 const renderContacts = contactData.map((contact, i) => {
   return (
-    <Link key={i} href={contact.href}>
-      <div className="py-4 px-2 sm:px-4 lg:px-2 mb-4 sm:mb-8 flex items-center justify-start bg-zinc-300 dark:bg-zinc-800 rounded-md w-full 2xl:w-[48%] hover:bg-opacity-70 dark:hover:bg-opacity-50 hover:cursor-pointer">
-        <div className="ml-4 sm:ml-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-          {contact.icon}
-        </div>
-        <p className="ml-6 sm:ml-12 text-xs sm:text-base lg:text-lg">{contact.link}</p>
+    <a key={i} href={contact.href} target="_blank" rel="noopener noreferrer" className="py-4 px-2 sm:px-4 lg:px-2 mb-4 sm:mb-8 flex items-center justify-start bg-zinc-300 dark:bg-zinc-800 rounded-md w-full 2xl:w-[48%] hover:bg-opacity-70 dark:hover:bg-opacity-50 hover:cursor-pointer">
+      <div className="ml-4 sm:ml-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+        {contact.icon}
       </div>
-    </Link>
+      <p className="ml-6 sm:ml-12 text-xs sm:text-base lg:text-lg">{contact.link}</p>
+    </a>
   )
 })
 
 const Contact = () => {
   return (
-    <div id="contact" className="pt-8 xl:pt-16 lg:pb-4">
+    <div id="contact" className="mt-8 pt-8 xl:pt-16 lg:pb-4">
       <h2 className="mt-20 mb-10 xl:mb-20 text-3xl md:text-4xl xl:text-5xl tracking-widest dark:text-white">Contact</h2>
         <p className="text-sm md:text-base xl:text-lg w-[90%] sm:w-3/4 lg:w-2/3 py-2 leading-6 md:leading-7 lg:leading-8 xl:leading-8 tracking-wider text-zinc-800 dark:text-zinc-100">
           Thank you for visiting my portfolio. If you have any questions or would like to know more about my work, 
