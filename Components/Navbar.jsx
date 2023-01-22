@@ -34,10 +34,7 @@ const Navbar = ({darkMode, handleClick}) => {
               )
             })}
             <li 
-              onClick={() => {
-                handleClick()
-                setMobileMenuOpen(false)
-              }} 
+              onClick={handleClick} 
               className={`${darkMode ? 'text-zinc-200' : 'text-zinc-800'} mt-4 tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200`}
             >
               {darkMode ? 'Light theme' : 'Dark theme'}

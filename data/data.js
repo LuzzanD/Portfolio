@@ -14,7 +14,7 @@ export const navbarData = [
 
 export const projectsData = [
     {name: 'E-commerce', image: ecomm, techs:[ <CssIcon />, <SanityIcon />, <ReactIcon />, <NextIcon />], site: 'https://ecommerce-project-tawny.vercel.app', github:'https://github.com/LuzzanD/ecommerce-project'},
-    {name: 'Portfolio', image: port, techs:[<TailwindIcon />, <ReactIcon />, <NextIcon />], site: '', github:''},
+    {name: 'Portfolio', image: port, techs:[<TailwindIcon />, <ReactIcon />, <NextIcon />], site: '', github:'https://github.com/LuzzanD/Portfolio'},
     {name: 'Quiz', image: quiz, techs:[<HtmlIcon />, <CssIcon />, <ReactIcon />], site: 'https://andrijasquizical.netlify.app', github:'https://github.com/LuzzanD/Quiz'},
     {name: 'Colour Scheme', image: scheme, techs:[<HtmlIcon />, <CssIcon />, <JavaScriptIcon />], site: 'https://andrijascolorscheme.netlify.app', github:'https://github.com/LuzzanD/Color-scheme-generator'},
     {name: 'Shopping Cart', image: cart, techs:[<HtmlIcon />, <CssIcon />, <JavaScriptIcon />], site: 'https://restaurantordering.netlify.app', github:'https://github.com/LuzzanD/Restaurant-Ordering'},
