@@ -17,7 +17,7 @@ const About = () => {
               Junior Frontend / React Developer
           </h3>
           <p className="text-sm md:text-base xl:text-lg py-2 w-[85%] leading-6 md:leading-7 lg:leading-8 xl:leading-8 tracking-wider text-zinc-800 dark:text-zinc-100">
-            My name is Andrija Stojanovic, and I am a Civil Engineer by education who has decided to switch career path to web development and 
+            My name is Andrija Stojanovic, and I am a Civil Engineer by education who have decided to switch career path to web development and 
             have been working mostly with React as a frontend JavaScript library. I am a highly motivated and analytical individual, 
             with a strong interest in exploring various programming languages and opportunities within the IT industry. I am excited to take on 
             new challenges and learn from experienced professionals in the field. 
