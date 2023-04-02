@@ -16,7 +16,7 @@ const Navbar = ({darkMode, handleClick}) => {
         <ul className="hidden sm:flex text-sm lg:text-base drop-shadow-grad font-semibold justify-around sm:gap-6 md:gap-8 lg:gap-16">
           {navbarData.map(item => {
             return (
-              <li className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
+              <li key={item.href} className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
                 <Link href={item.href}>{item.section}</Link>
               </li>
             )
@@ -28,7 +28,7 @@ const Navbar = ({darkMode, handleClick}) => {
           <ul className="flex flex-col text-sm font-bold drop-shadow-grad items-center justify-around gap-6 ">
             {navbarData.map(item => {
               return (
-                <li onClick={() => setMobileMenuOpen(false)} className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
+                <li key={item.href} onClick={() => setMobileMenuOpen(false)} className="tracking-wider cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-zinc-600 dark:to-zinc-100 to-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200">
                   <Link href={item.href}>{item.section}</Link>
                 </li>
               )
