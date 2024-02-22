@@ -22,7 +22,6 @@ const renderProjects = projectsData.map((project) => {
                 className="grayscale opacity-90 group-hover:opacity-100 group-hover:grayscale-0"
                 src={project.image}
               />
-              )
             </div>
             <div className="w-full flex absolute sm:hidden bottom-0 group-hover:flex">
               <a
@@ -51,7 +50,7 @@ const renderProjects = projectsData.map((project) => {
           </>
         ) : (
           <h1 className="mt-32 lg:mt-40 text-xl lg:text-3xl text-zinc-900 dark:text-zinc-100 text-center">
-            Comming soon...
+            Under development...
           </h1>
         )}
       </div>

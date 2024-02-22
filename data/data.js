@@ -2,9 +2,9 @@
 import ecomm from "../public/ecomm.png";
 import quiz from "../public/quizical.png";
 import scheme from "../public/scheme.png";
-import cart from "../public/cart.png";
 import port from "../public/portf.png";
 import spotify from "../public/Spotify.png";
+import overflow from "../public/overflow.jpg";
 import {
   HtmlIcon,
   CssIcon,
@@ -14,7 +14,6 @@ import {
   TailwindIcon,
   NextIcon,
   SanityIcon,
-  RapidApiIcon,
   ReduxIcon,
   AiFillGithubIcon,
   AiFillPhoneIcon,
@@ -34,7 +33,7 @@ export const navbarData = [
 export const projectsData = [
   {
     name: "StackOverflow Clone",
-    image: "",
+    image: overflow``,
     techs: [
       <NextJsIcon />,
       <TypeScriptIcon />,
