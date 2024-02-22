@@ -33,7 +33,7 @@ export const navbarData = [
 export const projectsData = [
   {
     name: "StackOverflow Clone",
-    image: overflow``,
+    image: overflow,
     techs: [
       <NextJsIcon />,
       <TypeScriptIcon />,
