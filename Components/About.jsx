@@ -27,10 +27,11 @@ const About = () => {
             My name is Andrija Stojanovic, and I am a Civil Engineer by
             education who has decided to switch career path to web development
             and have been working mostly with React as a frontend JavaScript
-            library. I am a highly motivated and analytical individual, with a
-            strong interest in exploring various programming languages and
-            opportunities within the IT industry. I am excited to take on new
-            challenges and learn from experienced professionals in the field.
+            library and Next as a React fullstack framework. I am a highly
+            motivated and analytical individual, with a strong interest in
+            exploring various programming languages and opportunities within the
+            IT industry. I am excited to take on new challenges and learn from
+            experienced professionals in the field.
           </p>
         </div>
       </div>
