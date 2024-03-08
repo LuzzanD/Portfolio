@@ -23,10 +23,6 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`font-Raleway ${darkMode ? "dark" : ""}`}>
-        <div className="sticky top-0 z-50">
-          <Navbar darkMode={darkMode} handleClick={handleClick} />
-        </div>
-
         <div>{children}</div>
 
         <Footer />
